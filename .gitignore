@@ -1,0 +1,4 @@
+*.ipk
+*.png
+*.jpg
+__pycache__/

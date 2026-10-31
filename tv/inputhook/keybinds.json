@@ -1,0 +1,22 @@
+{
+    "1038": {
+        "action": "launch",
+        "id": "youtube.leanback.v4"
+    },
+    "1042": {
+        "action": "launch",
+        "id": "tv.nebula.webos"
+    },
+    "1044": {
+        "action": "launch",
+        "id": "zattoo"
+    },
+    "1043": {
+        "action": "launch",
+        "id": "org.jellyfin.webos"
+    },
+    "1086": {
+        "action": "exec",
+        "command": "sh /media/developer/customhome/screen-toggle.sh"
+    }
+}

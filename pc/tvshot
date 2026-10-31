@@ -1,0 +1,8 @@
+#!/bin/sh
+# Screenshot of the LG TV without disconnecting VNC clients: tvshot [file]
+# Needs an ssh host alias (default "tv", override with TV=...) and ImageMagick.
+out="${1:-/tmp/tvshots/tv-$(date +%H%M%S).png}"
+mkdir -p "$(dirname "$out")"
+TV=${TV:-tv}
+timeout 30 ssh -tt "$TV" 'luna-send -n 1 luna://com.webos.service.capture/executeOneShot "{\"path\":\"/tmp/cap.png\",\"method\":\"DISPLAY\",\"format\":\"PNG\",\"width\":1920,\"height\":1080}" >/dev/null; exit' >/dev/null 2>&1
+timeout 60 ssh "$TV" 'cat /tmp/cap.png' > "$out" && magick "$out" -resize 960x "$out" && echo "$out"

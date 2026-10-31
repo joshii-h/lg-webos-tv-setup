@@ -1,0 +1,46 @@
+{
+  "favorites": [
+    "youtube.leanback.v4",
+    "netflix",
+    "tv.nebula.webos",
+    "ch.zappn",
+    "zattoo",
+    "ch.srgssr.playsuisse.tv",
+    "org.webosbrew.hbchannel",
+    "org.jellyfin.webos"
+  ],
+  "custom_tiles": [],
+  "hidden": [
+    "com.webos.app.homeoffice",
+    "com.webos.app.learning",
+    "com.webos.app.lifeonscreen",
+    "com.webos.app.livetv",
+    "com.webos.app.multiviewsettings",
+    "com.webos.app.sportsteamsettings",
+    "com.webos.app.totalmusic"
+  ],
+  "background": "custom-<32 hex chars, see pc/make-luma-wallpaper.py>",
+  "splash_background": null,
+  "deleted_backgrounds": [],
+  "show_home_names": false,
+  "show_app_names": true,
+  "hour_24": true,
+  "reduced_motion": false,
+  "show_seconds": false,
+  "greeting_name": "",
+  "show_greeting": true,
+  "show_date": true,
+  "date_format": "localized",
+  "input_modes": {
+    "com.webos.app.hdmi3": "Off"
+  },
+  "input_names": {},
+  "show_weather": false,
+  "weather_location": null,
+  "temperature_unit": "celsius",
+  "language": "de",
+  "text_rendering": "msaa",
+  "wallpaper_cycle": false,
+  "wallpaper_gradient": true,
+  "wallpaper_changed": 0
+}

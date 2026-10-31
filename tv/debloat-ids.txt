@@ -1,0 +1,61 @@
+# App IDs hidden on an LG OLED B4 (webOS 25 / 10.3.2, CH region) with
+# lucataco's webos-debloat.sh:  sh webos-debloat.sh --apply --id <id> --id <id> ...
+# NOTE: in zsh, word-split lists explicitly (${=VAR}) or every ID lands in one --id.
+
+# Ads / overlays / promo (from the script's "ad" + "demo" categories, minus
+# com.webos.app.cmp-client and com.webos.app.renewupdate, which were kept on purpose)
+com.webos.app.adoverlay
+com.webos.app.adoverlayex
+com.webos.app.adhdmi1
+com.webos.app.adhdmi2
+com.webos.app.adhdmi3
+com.webos.app.adhdmi4
+com.webos.app.fooddelivery
+com.webos.app.fooddeliveryex
+com.webos.app.fooddeliveryhdmi1
+com.webos.app.fooddeliveryhdmi2
+com.webos.app.fooddeliveryhdmi3
+com.webos.app.fooddeliveryhdmi4
+com.webos.app.overlaymembership
+com.webos.app.videoads
+com.webos.app.newandhot
+com.webos.app.store-demo
+com.webos.app.sync-demo
+com.webos.app.factorywin
+com.webos.app.svcdiagnostics
+# (plus the script's "sdk" and "remote" categories: --only sdk,remote)
+
+# Voice assistants and unused LG extras (user does not use voice control)
+com.webos.app.voice
+com.webos.app.voiceagent
+com.webos.app.voiceweb
+com.webos.app.assistant
+com.webos.app.aiplatform
+com.webos.app.aiplatformsupport
+amazon.alexa.view
+amazon.alexapr
+yandex.alice
+com.webos.app.quicklinkcopilot
+com.webos.app.lgchannels
+com.webos.app.totalmusic
+com.webos.app.sportsteamsettings
+com.webos.app.premium
+com.webos.app.homeoffice
+com.webos.app.learning
+com.webos.app.lifeonscreen
+com.webos.app.camera
+com.webos.app.tvphotobooth
+com.webos.app.familycare
+com.webos.app.weatherlocation
+com.webos.app.helpandtips
+com.webos.app.tvuserguide
+com.lge.app.viewster
+com.webos.app.homeconnect
+com.webos.service.homeconnect.app
+com.webos.app.signlanguage-avatar
+com.webos.app.magicnum
+
+# LG re-removes these from the block list at every boot (server-managed?),
+# so hide them in Luma's "hidden" list instead:
+#   com.webos.app.lifeonscreen com.webos.app.sportsteamsettings
+#   com.webos.app.totalmusic com.webos.app.homeoffice com.webos.app.learning
